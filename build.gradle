@@ -1,0 +1,20 @@
+plugins {
+    id 'application'
+}
+
+group = 'net.perlasjp'
+version = '1.0'
+
+sourceCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Agrega aquí tus librerías si las necesitas
+}
+
+application {
+    mainClass = 'net.perlasjp.juego.Main'
+}

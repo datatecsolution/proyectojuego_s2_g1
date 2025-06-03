@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug Juego",
+            "request": "launch",
+            "mainClass": "net.perlasjp.juego.Main",
+            "projectName": "Juego-Perla-12-S2-G1"
+        }
+    ]
+}
