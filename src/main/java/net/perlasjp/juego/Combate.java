@@ -1,11 +1,12 @@
 package net.perlasjp.juego;
 
-public class Combate { 
+public class Combate {
 
-    private String Jugador;
-    private String Enemigo;
-     public void (Jugador,enemigo,Enemigo) {
+    private Jugador jugador;
 
+    private Enemigo enemigo;
 
-}
+    public void iniciar(Enemigo enemigo, Jugador jugador) {
+
+    }
 }
