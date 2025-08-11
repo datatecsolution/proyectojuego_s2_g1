@@ -7,16 +7,17 @@ public class Enemigo {
     private int fuerza;
 
     public int atacar() {
-        return 0;
+        return fuerza;
     }
 
-    public void recibirDanio(int danio) {
-
+    public void recibirDanio(int cantidad) {
+        salud = salud - cantidad;
+        if (salud < 0)
+            salud = 0;
     }
 
     public boolean estaVivo() {
-
-        return false;
+        return salud > 0;
 
     }
 
