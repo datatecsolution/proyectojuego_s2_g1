@@ -12,13 +12,15 @@ public class Jugador {
         return fuerza;
     }
 
-    public void recibirDanios(int danio) {
-
+    public void recibirDanios(int cantidad) {
+        salud = salud - cantidad;
+        if (salud < 0)
+            salud = 0;
     }
 
     public boolean estaVivo() {
 
-        return false;
+        return salud > 0;
     }
 
 }
