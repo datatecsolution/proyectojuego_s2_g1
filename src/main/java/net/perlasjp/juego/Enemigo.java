@@ -1,5 +1,7 @@
 package net.perlasjp.juego;
 
+import java.util.Random;
+
 public class Enemigo {
 
     private String nombre;
@@ -7,17 +9,34 @@ public class Enemigo {
     private int fuerza;
 
     public int atacar() {
-        return 0;
+        return fuerza;
     }
 
-    public void recibirDanio(int danio) {
-
+    public void recibirDanio(int cantidad) {
+        salud = salud - cantidad;
+        if (salud < 0)
+            salud = 0;
     }
 
     public boolean estaVivo() {
+        return salud > 0;
 
-        return false;
+    }
 
+    public Enemigo(String n, int s) {
+
+        n = nombre;
+        s = salud;
+        fuerza = new Random().nextInt(5) + 5;
+
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getsalud() {
+        return salud;
     }
 
 }
