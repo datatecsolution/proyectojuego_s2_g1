@@ -8,14 +8,16 @@ public class Combate {
 
     private Enemigo enemigo;
 
-    public void iniciar(Enemigo enemigo, Jugador jugador) {
+    public void iniciar(Enemigo e, Jugador j) {
+        this.enemigo=e;
+        this.jugador=j;
+
         Scanner scanner = new Scanner(System.in);
-        // System.out.println ("\niUn" + enemigo.getNombre() + "ha aparecido");
+        System.out.println ("\niUn " + enemigo.getNombre() + " ha aparecido");
 
         while (jugador.estaVivo() && enemigo.estaVivo()) {
-            // System.out.println ("\nTu salud :" + jugador.getSalud() + " | Salud del
-            // enemigo: " + enemigo.getSalud());
-            System.out.print("¿Atacar (a) o Huir (h)?");
+            System.out.println ("\nTu salud :" + jugador.getSalud() + " | Salud del enemigo: " + enemigo.getSalud());
+            System.out.print("¿Atacar (a) o Huir (h)? ");
             String opcion = scanner.nextLine();
 
             if (opcion.equalsIgnoreCase("a")) {
@@ -24,7 +26,7 @@ public class Combate {
                     jugador.recibirDanios(enemigo.atacar());
 
                 } else {
-                    // System.out.println ("¡Derrotaste al" + enemigo.getNombre () + "!");
+                     System.out.println ("¡Derrotaste al" + enemigo.getNombre () + "!");
 
                 }
             } else if (opcion.equalsIgnoreCase("h")) {

@@ -17,7 +17,7 @@ public class Juego {
         System.out.println("¡Bienvenido al juego de aventura!");
         System.out.print("Ingresa tu nombre:");
         String nombre = scanner.nextLine();
-        jugador = new Jugador();
+        jugador = new Jugador(nombre);
 
         historia.introduccion();
 
@@ -31,11 +31,11 @@ public class Juego {
 
             switch (opcion) {
                 case "1":
-                    Enemigo enemigo = new Enemigo();
+                    enemigo = new Enemigo("Globin",20);
                     combate.iniciar(enemigo, jugador);
                     break;
                 case "2":
-                    // vamos a agregar otro metodo de jugador
+                    jugador.mostrarEstado();
                     break;
                 case "3":
                     System.out.println("¡Gracias por jugar!");
