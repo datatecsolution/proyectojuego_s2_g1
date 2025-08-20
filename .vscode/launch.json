@@ -6,6 +6,13 @@
             "name": "Main",
             "request": "launch",
             "mainClass": "net.perlasjp.juego.Main",
+            "projectName": "Juego-Perla-12-S2-G1-proyectojuego_s2_g1"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "net.perlasjp.juego.Main",
             "projectName": "proyectojuego_s2_g1"
         },
         {
