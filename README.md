@@ -120,3 +120,14 @@ gradlew.bat clean     # Windows
 ## 🧩 Créditos
 
 Este proyecto fue creado por un equipo de alumnos con fines educativos para aprender trabajo en equipo y desarrollo de software con herramientas modernas.
+
+## 🧩 Ejecutar el proyecto
+- **Clic en el gradle en el ico del elefante.**
+- **Clic en la carpeta build.**
+- **Clic en clear.**
+- **Clic en build.**
+- **Una vez que termine copie este comando de la siguiente linea en la terminal.**
+```
+java -jar build\libs\Juego-Perla-12-S2-G1-1.0.jar
+java -jar build/libs/Juego-Perla-12-S2-G1-1.0.jar 
+```
